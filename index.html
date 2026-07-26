@@ -9,23 +9,28 @@
 <body>
 
 <header class="site-header">
-  <!-- Photo -->
-  <img src="photo.png" alt="Photo Fatoumata Diallo" class="corner-photo">
+  <div class="header-identity">
+    <img src="photo.png" alt="Photo Fatoumata Diallo" class="corner-photo">
+    <div class="header-name">
+      <span class="eyebrow">Data & Project Management</span>
+      <h1>Fatoumata Diallo</h1>
+    </div>
+  </div>
 
   <!-- Coordonnées -->
 <div class="header-info">
   <!-- Version FR -->
   <div class="lang fr">
-    <p><strong>Email : </strong> <a href="mailto:fatoumatadiallo63@gmail.com">fatoumatadiallo63@gmail.com</a></p>
-    <p><strong>Téléphone : </strong> <a href="tel:+33753687785">07 53 68 77 85</a></p>
-    <p><strong>Adresse : </strong> Seclin, France</p>
+    <p><a href="mailto:fatoumatadiallo63@gmail.com">fatoumatadiallo63@gmail.com</a></p>
+    <p><a href="tel:+33753687785">07 53 68 77 85</a></p>
+    <p>Lille, France (59000)</p>
   </div>
 
   <!-- Version EN -->
   <div class="lang en">
-    <p><strong>Email:</strong> <a href="mailto:fatoumatadiallo63@gmail.com">fatoumatadiallo63@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+33753687785">+33 7 53 68 77 85</a></p>
-    <p><strong>Address:</strong> Seclin, France</p>
+    <p><a href="mailto:fatoumatadiallo63@gmail.com">fatoumatadiallo63@gmail.com</a></p>
+    <p><a href="tel:+33753687785">+33 7 53 68 77 85</a></p>
+    <p>Lille, France (59000)</p>
   </div>
 </div>
 
@@ -52,7 +57,11 @@
   <div class="header-actions">
     <div class="social-links">
       <a href="https://www.linkedin.com/in/fatoumata-diallo-196830218/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/Fatou25?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/palycode25" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/palycode25/Portfolio_fatou" target="_blank" rel="noopener" class="lang fr">Portfolio</a>
+      <a href="https://github.com/palycode25/Portfolio_fatou" target="_blank" rel="noopener" class="lang en">Portfolio</a>
+      <a href="https://github.com/palycode25/Mes-certificats" target="_blank" rel="noopener" class="lang fr">Certifications</a>
+      <a href="https://github.com/palycode25/Mes-certificats" target="_blank" rel="noopener" class="lang en">Certifications</a>
     </div>
     <div id="lang-switch">
       <button type="button" data-lang="en">EN</button>
@@ -64,314 +73,308 @@
 <main>
   <!-- HERO -->
   <section id="hero" class="hero-wrap">
-    <h2 class="lang en">
-      Hello 👋, I'm Fatoumata DIALLO.
-      I have just finished a Master's in Computer Science – Data Science, with a final internship at Framatome as a Data Analyst.
-      I am <strong>available immediately</strong> for a full-time position (CDD or CDI) as a Data Engineer, Data Analyst, or Data Scientist.
-      I love turning data into smart decisions — from collection to visualization, from pipelines to predictions.
-    </h2>
+    <div class="hero-copy">
+      <h2 class="lang en">
+        Hello 👋, I'm Fatoumata DIALLO.
+        I hold a Bachelor's in Computer Science, a Master's in Data Science, and I am currently completing a Machine Learning Engineer certification (RNCP Level 7) alongside a work-study program at Horiba as a <strong>Data Analyst / Jira Administrator (PMO)</strong>.
+        I am open to positions in : <strong>data project management, PMO, Data Analyst, Data Engineer</strong> — in <strong>permanent (CDI) or fixed-term (CDD, min. 1 year)</strong> format, and I am <strong>available from mid-November 2026</strong>.
+        I love structuring projects and turning data into decisions — cadrage, planning, reporting, and dashboards that keep scope, budget, and deadlines aligned.
+      </h2>
 
-    <h2 class="lang fr">
-      Bonjour 👋, je suis Fatoumata DIALLO.
-      J’ai terminé un Master en Informatique – Science des données, avec un stage final chez Framatome en tant que Data Analyst.
-      Je suis <strong>disponible dès maintenant</strong> pour un poste à temps plein (CDD ou CDI) en tant que Data Engineer, Data Analyst ou Data Scientist.
-      J’adore transformer les données en décisions intelligentes — de la collecte à la visualisation, des pipelines aux prédictions.
-    </h2>
+      <h2 class="lang fr">
+        Bonjour 👋, je suis Fatoumata DIALLO.
+        Titulaire d'une Licence en Informatique, d'un Master 2 Sciences des Données, et actuellement en formation Machine Learning Engineer (RNCP Niveau 7) en alternance chez Horiba en tant que <strong>Data Analyst / Administratrice Jira (PMO)</strong>.
+        Je suis ouverte à des postes de : <strong>gestion de projet data, PMO, Data Analyst, Data Engineer</strong> — en <strong>CDI ou CDD (min. 1 an)</strong>, et je suis <strong>disponible à partir de mi-novembre 2026</strong>.
+        J'aime structurer les projets et transformer les données en décisions — cadrage, planification, reporting et tableaux de bord pour piloter p&eacute;rim&egrave;tre, budget et d&eacute;lais.
+      </h2>
+    </div>
+
+    <!-- Signature element: data → decision pipeline, echoing both PMO milestones and the data workflow -->
+    <div class="pipeline" aria-hidden="true">
+      <div class="pipeline-track"></div>
+      <div class="pipeline-step"><span class="dot"></span><span class="mono lang fr">Collecte</span><span class="mono lang en">Collect</span></div>
+      <div class="pipeline-step"><span class="dot"></span><span class="mono lang fr">Nettoyage</span><span class="mono lang en">Clean</span></div>
+      <div class="pipeline-step"><span class="dot"></span><span class="mono lang fr">Analyse</span><span class="mono lang en">Analyze</span></div>
+      <div class="pipeline-step"><span class="dot"></span><span class="mono lang fr">Décision</span><span class="mono lang en">Decide</span></div>
+      <div class="pipeline-step"><span class="dot"></span><span class="mono lang fr">Impact</span><span class="mono lang en">Impact</span></div>
+    </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
+    <span class="eyebrow lang en">Capabilities</span>
+    <span class="eyebrow lang fr">Capacités</span>
     <h2 class="lang en">My Data Workflow & Skills</h2>
     <h2 class="lang fr">Mon workflow & compétences data</h2>
 
     <div class="grid">
       <div class="card">
-        <h3 class="lang en">Data Collection</h3>
-        <h3 class="lang fr">Collecte de données</h3>
-        <p class="lang en">I connect to various sources (SQL databases, spreadsheets, APIs) to extract raw data from diverse systems.</p>
-        <p class="lang fr">Connexion à diverses sources (bases SQL, tableurs, APIs) pour extraire des données brutes hétérogènes.</p>
-        <p class="lang en"><strong>SQL, PostgreSQL, MongoDB, Excel, Airtable, ETL/ELT</strong></p>
-        <p class="lang fr"><strong>SQL, PostgreSQL, MongoDB, Excel, Airtable, ETL/ELT</strong></p>
+        <span class="tag mono card-kicker">DATA</span>
+        <h3 class="lang en">Data & Programming</h3>
+        <h3 class="lang fr">Data et programmation</h3>
+        <p class="lang en">Foundations for a Data Product Manager / Data Scientist profile: version control and command-line environments.</p>
+        <p class="lang fr">Bases d'un profil Data Product Manager / Data Scientist : gestion de versions et environnements en ligne de commande.</p>
+        <div class="tag-row"><span class="tag">Data Product Manager</span><span class="tag">Data Scientist</span><span class="tag">Linux & Bash</span><span class="tag">Git & GitHub</span></div>
+      </div>
+
+      <div class="card accent">
+        <span class="tag mono card-kicker">PMO</span>
+        <h3 class="lang en">Governance & Collaborative Tools</h3>
+        <h3 class="lang fr">Gouvernance & outils collaboratifs</h3>
+        <p class="lang en">Structuring, tracking and documenting work across teams: methodology, workflows, knowledge sharing and reporting — PMO, planning.</p>
+        <p class="lang fr">Structurer, suivre et documenter le travail en équipe : méthodologie, workflows, partage de connaissance et reporting — PMO, planification.</p>
+        <div class="tag-row"><span class="tag">Atlassian</span><span class="tag">Notion</span><span class="tag">Airtable</span><span class="tag">Asana</span><span class="tag">Redmine</span><span class="tag">GanttProject</span></div>
       </div>
 
       <div class="card">
-        <h3 class="lang en">Cleaning & Preprocessing</h3>
-        <h3 class="lang fr">Nettoyage & prétraitement</h3>
-        <p class="lang en">I prepare clean datasets: handling missing values & duplicates, formatting, filtering.</p>
-        <p class="lang fr">Préparation de jeux propres : gestion des valeurs manquantes & doublons, formatage, filtrage.</p>
-        <p class="lang en"><strong>Python (pandas, numpy), R, VBA</strong></p>
-        <p class="lang fr"><strong>Python (pandas, numpy), R, VBA</strong></p>
+        <span class="tag mono card-kicker">ML</span>
+        <h3 class="lang en">Machine Learning</h3>
+        <h3 class="lang fr">Machine Learning</h3>
+        <p class="lang en">Data science methodology, feature engineering and model optimization, applied to time series and text mining — plus a first introduction to Deep Learning and LLMs.</p>
+        <p class="lang fr">Méthodologie en Data Science, feature engineering et optimisation, appliquées aux séries temporelles et au text mining — et une première sensibilisation au Deep Learning et aux LLM.</p>
+        <div class="tag-row"><span class="tag">Feature Engineering</span><span class="tag">Scikit-learn</span><span class="tag">Séries temporelles</span><span class="tag">Text Mining</span><span class="tag">Deep Learning & LLM (notions)</span></div>
       </div>
 
       <div class="card">
-        <h3 class="lang en">Statistical Analysis</h3>
-        <h3 class="lang fr">Analyse statistique</h3>
-        <p class="lang en">Descriptive stats, correlations, and domain insights to uncover trends.</p>
-        <p class="lang fr">Statistiques descriptives, corrélations et expertise métier pour révéler les tendances.</p>
-        <p class="lang en"><strong>Python, R, Excel, probability, basic stats</strong></p>
-        <p class="lang fr"><strong>Python, R, Excel, probabilités, stats de base</strong></p>
+        <span class="tag mono card-kicker">ENG</span>
+        <h3 class="lang en">Data Engineering</h3>
+        <h3 class="lang fr">Data Engineering</h3>
+        <p class="lang en">Building and querying data pipelines, from SQL to distributed processing.</p>
+        <p class="lang fr">Construction et interrogation de pipelines de données, du SQL au traitement distribué.</p>
+        <div class="tag-row"><span class="tag">SQL</span><span class="tag">Streamlit</span><span class="tag">PySpark</span><span class="tag">MLflow</span></div>
       </div>
 
       <div class="card">
-        <h3 class="lang en">Data Visualization</h3>
-        <h3 class="lang fr">Visualisation</h3>
-        <p class="lang en">Dashboards and reports that make insights actionable and clear.</p>
-        <p class="lang fr">Tableaux de bord et rapports pour des insights actionnables et clairs.</p>
-        <p class="lang en"><strong>Power BI, Python, Tableau, Excel</strong></p>
-        <p class="lang fr"><strong>Power BI, Python, Tableau, Excel</strong></p>
+        <span class="tag mono card-kicker">API</span>
+        <h3 class="lang en">APIs</h3>
+        <h3 class="lang fr">APIs</h3>
+        <p class="lang en">API fundamentals and building lightweight services in the cloud.</p>
+        <p class="lang fr">Fondamentaux des APIs et construction de services légers dans le cloud.</p>
+        <div class="tag-row"><span class="tag">Fondamentaux des APIs</span><span class="tag">FastAPI</span><span class="tag">AWS Solutions Architect</span></div>
       </div>
 
       <div class="card">
-        <h3 class="lang en">Prediction & Modeling</h3>
-        <h3 class="lang fr">Prédiction & modélisation</h3>
-        <p class="lang en">Build and evaluate ML models to forecast outcomes and support decisions.</p>
-        <p class="lang fr">Construction et évaluation de modèles ML pour anticiper et décider.</p>
-        <p class="lang en"><strong>scikit-learn, NLP, supervised/unsupervised learning</strong></p>
-        <p class="lang fr"><strong>scikit-learn, NLP, apprentissage supervisé/non supervisé</strong></p>
-      </div>
-
-      <div class="card">
-        <h3 class="lang en">Tools & Technologies</h3>
-        <h3 class="lang fr">Outils & technologies</h3>
-        <p class="lang en">
-          <strong>Languages:</strong> Python, R, SQL, VBA<br>
-          <strong>BI & Viz:</strong> Power BI, Tableau, Excel<br>
-          <strong>ETL/ELT & Others:</strong> Talend, APIs, Git
-        </p>
-        <p class="lang fr">
-          <strong>Langages :</strong> Python, R, SQL, VBA<br>
-          <strong>BI & Viz :</strong> Power BI, Tableau, Excel<br>
-          <strong>ETL/ELT & Divers :</strong> Talend, APIs, Git
-        </p>
+        <span class="tag mono card-kicker">OPS</span>
+        <h3 class="lang en">Environment Setup & MLOps</h3>
+        <h3 class="lang fr">Environment setup & MLOps</h3>
+        <p class="lang en">Containerized, reproducible working environments — from experiment versioning to deployment and production monitoring.</p>
+        <p class="lang fr">Environnements de travail conteneurisés et reproductibles — du versioning des expériences au déploiement et à la surveillance en production.</p>
+        <div class="tag-row"><span class="tag">Docker</span><span class="tag">MLflow</span><span class="tag">Kubernetes</span><span class="tag">Prometheus & Grafana</span></div>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section id="education">
+    <span class="eyebrow lang fr">Parcours</span>
+    <span class="eyebrow lang en">Path</span>
     <h2 class="lang fr">Formation</h2>
     <h2 class="lang en">Education</h2>
 
-    <div class="grid">
-      <div class="card">
-        <p class="lang fr">Master 2 – Algorithmiques et Systèmes Intelligents (Science des données) – Université de Caen Normandie</p>
-        <p class="lang en">Master’s – Algorithmics and Intelligent Systems (Data Science) – University of Caen Normandy</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="mono timeline-date lang fr">Nov. 2025 – Nov. 2026</span>
+        <span class="mono timeline-date lang en">Nov. 2025 – Nov. 2026</span>
+        <p class="lang fr"><strong>Machine Learning Engineer – RNCP Niveau 7</strong> — Ecole des Mines de Paris PSL / Datascientest<br>MLOps, modélisation, entraînement et déploiement de projets ML.</p>
+        <p class="lang en"><strong>Machine Learning Engineer – RNCP Level 7</strong> — Ecole des Mines de Paris PSL / Datascientest<br>MLOps, modeling, training and deployment of ML projects.</p>
       </div>
-      <div class="card">
-        <p class="lang fr">Licence Informatique – Université de Caen Normandie</p>
-        <p class="lang en">Bachelor’s – Computer Science – University of Caen Normandy</p>
+      <div class="timeline-item">
+        <span class="mono timeline-date lang fr">2023 – 2025</span>
+        <span class="mono timeline-date lang en">2023 – 2025</span>
+        <p class="lang fr">Master 2 – Algorithmiques et Systèmes Intelligents (Science des données) — Université de Caen Normandie<br>Analyse de données, Machine Learning supervisé/non supervisé, TAL, Web sémantique, Aide à la décision.</p>
+        <p class="lang en">Master's – Algorithmics and Intelligent Systems (Data Science) — University of Caen Normandy<br>Data analysis, supervised/unsupervised Machine Learning, NLP, Semantic Web, Decision support.</p>
       </div>
-      <div class="card">
-        <p class="lang fr">Licence MIAGE – Université Kofi Annan de Guinée</p>
-        <p class="lang en">Bachelor’s – MIAGE – Kofi Annan University of Guinea</p>
+      <div class="timeline-item">
+        <span class="mono timeline-date lang fr">2020 – 2023</span>
+        <span class="mono timeline-date lang en">2020 – 2023</span>
+        <p class="lang fr">Licence Informatique — Université de Caen Normandie<br>Algorithmique, programmation, bases de données, réseaux et fondamentaux de l'informatique.</p>
+        <p class="lang en">Bachelor's – Computer Science — University of Caen Normandy<br>Algorithms, programming, databases, networks and computer science fundamentals.</p>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience">
+    <span class="eyebrow lang fr">Parcours pro</span>
+    <span class="eyebrow lang en">Track record</span>
     <h2 class="lang fr">Expériences professionnelles</h2>
     <h2 class="lang en">Professional Experience</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h3 class="lang fr">Stage de fin d’études – Data Analyst – Framatome CRC Ugine</h3>
-        <h3 class="lang en">Final Internship – Data Analyst – Framatome CRC Ugine</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="mono timeline-date">Nov. 2025 – Nov. 2026</span>
+        <h3 class="lang fr">Alternance – Data Analyst / Administratrice Jira (PMO) — Horiba, Loos (59)</h3>
+        <h3 class="lang en">Work-study program – Data Analyst / Jira Administrator (PMO) — Horiba, Loos (59)</h3>
         <p class="lang fr">
-          Collecte de données issues de capteurs (laminoirs, site de Rugles). Prétraitement, nettoyage et enrichissement pour alimenter la simulation et créer des visuels Power BI.
-          Automatisation complète de la chaîne de traitement (Python).
+          Administration Jira (workflows, transitions, permissions, champs personnalisés) ;
+          scripts JMWE / Nunjucks / Smart Values pour automatiser les tâches répétitives ; création et suivi des demandes via Jira Service Management ;
+          planification projet avec BigPicture (Gantt, ressources, suivi du scope) ; tableaux de bord Power BI et Excel pour le suivi des charges et l'avancement.
         </p>
         <p class="lang en">
-          Collected sensor data (rolling mill, Rugles site). Preprocessed, cleaned, and enriched data to feed simulations and build Power BI visuals.
-          Automated the full processing pipeline in Python.
+          Jira administration (workflows, transitions, permissions, custom fields);
+          JMWE / Nunjucks / Smart Values scripting to automate repetitive tasks; service request creation and follow-up via Jira Service Management;
+          project planning with BigPicture (Gantt, resources, scope tracking); Power BI and Excel dashboards for workload and progress tracking.
         </p>
       </div>
 
-      <div class="card">
-        <h3 class="lang fr">Stage – Développement Web – AgriGaston</h3>
-        <h3 class="lang en">Internship – Web Development – AgriGaston</h3>
+      <div class="timeline-item">
+        <span class="mono timeline-date">Mars – Août 2025</span>
+        <h3 class="lang fr">Stage de fin d'études – Data Engineer / Data Analyst — Framatome CRC, Ugine (73)</h3>
+        <h3 class="lang en">Final Internship – Data Engineer / Data Analyst — Framatome CRC, Ugine (73)</h3>
         <p class="lang fr">
-          Ajout d’une carte interactive et intégration d’une liste d’avocats depuis Airtable (Nuxt.js). Collaboration avec l’équipe pour affiner l’UX et la satisfaction client.
+          Collecte, prétraitement et nettoyage de données multi-sources en Python pour simulations numériques nucléaires ;
+          tableaux de bord interactifs Power BI pour la visualisation des KPI et l'aide à la décision ;
+          automatisation complète de la chaîne de traitement et formation des ingénieurs à Power BI.
         </p>
         <p class="lang en">
-          Added an interactive map and integrated a lawyer list from Airtable (Nuxt.js). Worked with the team to refine UX and ensure client satisfaction.
+          Collected, preprocessed and cleaned multi-source data in Python for nuclear numerical simulations;
+          built interactive Power BI dashboards for KPI visualization and decision support;
+          fully automated the processing pipeline and trained engineers on Power BI.
         </p>
       </div>
 
-      <div class="card">
-        <h3 class="lang fr">Employée polyvalente – Quick Côte de Nacre (2021 – Mai 2023)</h3>
-        <h3 class="lang en">Crew Member – Quick Côte de Nacre (2021 – May 2023)</h3>
+      <div class="timeline-item">
+        <span class="mono timeline-date lang fr">Projet collaboratif</span>
+        <span class="mono timeline-date lang en">Collaborative project</span>
+        <h3 class="lang fr">Projet collaboratif – Développement Web — avec l'entreprise AgriGaston</h3>
+        <h3 class="lang en">Collaborative Project – Web Development — with the company AgriGaston</h3>
+        <p class="lang fr">
+          Projet mené en équipe de 14 personnes, en lien direct avec l'entreprise AgriGaston : conception d'une carte interactive et intégration d'une liste d'avocats depuis Airtable (Nuxt.js). Une première expérience de coordination à grande échelle où j'ai pris naturellement ma place, entre contribution technique et attention portée à l'UX et à la satisfaction client.
+        </p>
+        <p class="lang en">
+          Project run by a 14-person team, working directly with the company AgriGaston: built an interactive map and integrated a lawyer list from Airtable (Nuxt.js). A first experience of large-scale coordination where I naturally found my place, balancing technical contribution with a close eye on UX and client satisfaction.
+        </p>
+      </div>
+
+      <div class="timeline-item student-jobs">
+        <span class="mono timeline-date lang fr">Jobs étudiants</span>
+        <span class="mono timeline-date lang en">Student jobs</span>
+        <h3 class="lang fr">Jobs étudiants — pendant les études</h3>
+        <h3 class="lang en">Student jobs — during studies</h3>
         <ul class="lang fr">
-          <li>Prise et préparation de commandes</li><li>Encaissement et nettoyage</li>
+          <li><span class="tag mono">2 mois</span> Manager — Mobil-home Camping, gestion d'équipe</li>
+          <li><span class="tag mono">2 ans</span> Employée polyvalente — Quick Côte de Nacre, Caen</li>
+          <li><span class="tag mono">2 ans</span> Employée logistique — IF Caen U-Logistique</li>
+          <li><span class="tag mono">4 mois</span> Aide et accompagnement à domicile des personnes âgées — ADMR de Caen</li>
         </ul>
         <ul class="lang en">
-          <li>Order taking & preparation</li><li>Cashier duties & cleaning</li>
+          <li><span class="tag mono">2 months</span> Manager — Mobile-home Camping, staff management</li>
+          <li><span class="tag mono">2 years</span> Crew Member — Quick Côte de Nacre, Caen</li>
+          <li><span class="tag mono">2 years</span> Logistics Employee — IF Caen U-Logistique</li>
+          <li><span class="tag mono">4 months</span> Home Care Assistant for the Elderly — ADMR de Caen</li>
         </ul>
       </div>
     </div>
   </section>
 
- <!-- ACADEMIC PROJECTS -->
+<!-- PROJECTS -->
 <section id="academic-projects">
-  <h2 class="lang fr">Projets académiques</h2>
-  <h2 class="lang en">Academic Projects</h2>
+  <span class="eyebrow lang fr">Réalisations</span>
+  <span class="eyebrow lang en">Case work</span>
+  <h2 class="lang fr">Projets</h2>
+  <h2 class="lang en">Projects</h2>
 
   <div class="grid">
     <div class="card">
-      <a class="card-link" href="https://github.com/Fatou25/Analyse-de-genre-sur-Wikipedia" target="_blank" rel="noopener">
-        <h3 class="lang fr">Analyse du genre sur Wikipédia</h3>
-        <h3 class="lang en">Gender Analysis on Wikipedia</h3>
+      <a class="card-link" href="https://github.com/palycode25/Insurance-Claims-Frequency-and-Severity-Prediction/blob/main/README.md" target="_blank" rel="noopener">
+        <h3 class="lang fr">Insurance Claims – Prédiction Fréquence & Sévérité</h3>
+        <h3 class="lang en">Insurance Claims – Frequency & Severity Prediction</h3>
       </a>
-      <p class="lang fr">
-        Web scraping des contributeurs, prétraitement (nettoyage, visualisation), modélisation prédictive.
-      </p>
-      <p class="lang en">
-        Web scraping of contributors, preprocessing (cleaning, visualization), predictive modeling.
-      </p>
+      <p class="lang fr">Prédiction de la fréquence et sévérité des sinistres via données télématiques et modélisation actuarielle. <strong>Python, Scikit-learn, Pandas, Jupyter</strong> — Fév. 2026, en cours.</p>
+      <p class="lang en">Prediction of claim frequency and severity using telematics data and actuarial modeling. <strong>Python, Scikit-learn, Pandas, Jupyter</strong> — Feb. 2026, ongoing.</p>
     </div>
 
     <div class="card">
-      <a class="card-link" href="https://github.com/Fatou25/-Snowman-Game-RDF-OWL-SPARQL-/tree/main/DIALLO_SOW_rendu_WS" target="_blank" rel="noopener">
-        <h3>Snowman Game (RDF/OWL, SPARQL)</h3>
+      <a class="card-link" href="https://github.com/palycode25/Velib-product-discovery-ml-strategy/blob/main/Rapport%20Projet_Velib.pdf" target="_blank" rel="noopener">
+        <h3 class="lang fr">Vélib – Data Product & Stratégie ML</h3>
+        <h3 class="lang en">Vélib – Data Product & ML Strategy</h3>
       </a>
-      <p>Conception d’une ontologie, règles d’inférence et requêtes SPARQL (déplacements, états, fusions).</p>
+      <p class="lang fr">Étude Product Management : Discovery, personas, ML Canvas, MVP et roadmap pour l'optimisation prédictive du réseau Vélib. Nov. 2025 – Fév. 2026.</p>
+      <p class="lang en">Product management study: Discovery, personas, ML Canvas, MVP and roadmap for predictive optimization of the Vélib network. Nov. 2025 – Feb. 2026.</p>
     </div>
 
     <div class="card">
-      <a class="card-link" href="https://github.com/Fatou25/Base_de_Donnees_DataWareHouseTalend" target="_blank" rel="noopener">
-        <h3>Data Warehouse avec Talend</h3>
-      </a>
-      <p>Entrepôt en étoile : modélisation, pipelines ETL, cubes OLAP.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PERSONAL PROJECTS -->
-<section id="personal-projects">
-  <h2 class="lang fr">Projets personnels</h2>
-  <h2 class="lang en">Personal Projects</h2>
-
-  <div class="grid">
-    <!-- R Shiny + Streamlit regroupés dans un même repo -->
-    <div class="card">
-      <!-- Remplace le lien ci-dessous par l'URL exacte de TON repo fusionné -->
-      <a class="card-link" href="https://github.com/Fatou25/App_data_analysis_Streamlit_R-Shinny" target="_blank" rel="noopener">
+      <a class="card-link" href="https://github.com/palycode25?tab=repositories" target="_blank" rel="noopener">
         <h3 class="lang fr">Application interactive de Data Analysis</h3>
         <h3 class="lang en">Interactive Data Analysis Application</h3>
       </a>
-      <p class="lang fr">R Shiny / Streamlit : import CSV/Excel, stats, visualisations, modèles prédictifs.</p>
-      <p class="lang en">R Shiny / Streamlit: CSV/Excel import, stats, visualizations, predictive models.</p>
+      <p class="lang fr">R Shiny / Streamlit : import CSV/Excel, visualisations multivariées, modèles prédictifs (régression linéaire, random forest). Projet personnel.</p>
+      <p class="lang en">R Shiny / Streamlit: CSV/Excel import, multivariate visualizations, predictive models (linear regression, random forest). Personal project.</p>
     </div>
-
-   <div class="card">
-  <a class="card-link" href="https://github.com/Fatou25/Analyse_de_donnees_titanic_bitcoin_ethereum" target="_blank" rel="noopener">
-    <h3 class="lang fr">Analyses de données – Titanic & Bitcoin/Ethereum</h3>
-    <h3 class="lang en">Data Analysis – Titanic & Bitcoin/Ethereum</h3>
-  </a>
-  <p class="lang fr">
-    <strong>Titanic :</strong> nettoyage, exploration, modélisation de la survie.<br>
-    <strong>Bitcoin & Ethereum :</strong> séries temporelles, corrélations, tendances.
-  </p>
-  <p class="lang en">
-    <strong>Titanic:</strong> cleaning, exploration, survival modeling.<br>
-    <strong>Bitcoin & Ethereum:</strong> time series, correlations, trends.
-  </p>
-</div>
-
   </div>
 </section>
 
-
-<!-- COURSES -->
-<section id="courses">
-  <h2 class="lang en">Written Courses</h2>
-  <h2 class="lang fr">Cours rédigés</h2>
-
-  <div class="grid">
-   
-
-    <!-- Python -->
-  <!-- ====== Python card (lien local vers le PDF) ====== -->
-<div class="card">
-  <h3 class="lang en">Data Analysis in Python</h3>
-  <h3 class="lang fr">Analyse de données en Python</h3>
-  <p class="lang en">Cleaning, exploration, and visualization with pandas and matplotlib.</p>
-  <p class="lang fr">Nettoyage, exploration et visualisation avec pandas et matplotlib.</p>
-
-  <!-- Même fichier pour EN/FR, ouverture dans un nouvel onglet -->
-  <a href="Cours_Python.pdf" target="_blank" rel="noopener" class="button lang en">
-    View / Download PDF
-  </a>
-  <a href="Cours_Python.pdf" target="_blank" rel="noopener" class="button lang fr">
-    Voir / Télécharger le PDF
-  </a>
-</div>
-
-<!-- ====== R card (titre et lien corrigés) ====== -->
-<div class="card">
-  <h3 class="lang en">Data Analysis with R</h3>
-  <h3 class="lang fr">Analyse de données avec R</h3>
-  <p class="lang en">Data manipulation, visualization, and statistical tests with R.</p>
-  <p class="lang fr">Manipulation de données, visualisation et tests statistiques avec R.</p>
-
-  <!-- Remplace le lien GitHub par le PDF local -->
-  <a href="R_analyse_de_données.pdf" target="_blank" rel="noopener" class="button lang en">
-    View / Download PDF
-  </a>
-  <a href="R_analyse_de_données.pdf" target="_blank" rel="noopener" class="button lang fr">
-    Voir / Télécharger le PDF
-  </a>
-</div>
-
-
-    <!-- Gestion de projet -->
-    <div class="card">
-      <h3 class="lang en">Project Management</h3>
-      <h3 class="lang fr">Gestion de projet</h3>
-      <p class="lang en">Introduction to project management, methodologies, tools, and best practices.</p>
-      <p class="lang fr">Introduction à la gestion de projet, méthodologies, outils et bonnes pratiques.</p>
-      <a href="Gestion_de_projet/gestion_de_projet.pdf" target="_blank" class="button lang en">
-        View / Download PDF
-      </a>
-      <a href="Gestion_de_projet/gestion_de_projet.pdf" target="_blank" class="button lang fr">
-        Voir / Télécharger le PDF
-      </a>
-    </div>
-</section>
-
-  </div>
-</section>
-</main>
 
 <section id="certificats">
+  <span class="eyebrow lang fr">Preuves</span>
+  <span class="eyebrow lang en">Credentials</span>
   <h2 class="lang fr">Certificats</h2>
   <h2 class="lang en">Certificates</h2>
 
   <div class="grid">
     <div class="card">
       <div class="card-header">
-        <!-- FR -->
-        <h3 class="lang fr">Excel – Notions de base (3h)</h3>
-        <!-- EN -->
-        <h3 class="lang en">Excel – Basic notions (3h)</h3>
-
+        <h3 class="lang fr">PMP — LinkedIn Learning (7h)</h3>
+        <h3 class="lang en">PMP — LinkedIn Learning (7h)</h3>
         <div class="card-actions">
-          <a href="excel_certificat.pdf" target="_blank" class="button lang fr">Voir</a>
-          <a href="excel_certificat.pdf" target="_blank" class="button lang en">View</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/PMP%20By%20Linkedin%20learning%20(7h).pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/PMP%20By%20Linkedin%20learning%20(7h).pdf" target="_blank" class="button lang en">View</a>
         </div>
       </div>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <!-- FR -->
-        <h3 class="lang fr">Power BI – Analyse de données (14h)</h3>
-        <!-- EN -->
-        <h3 class="lang en">Power BI – Data Analysis (14h)</h3>
-
+        <h3 class="lang fr">Atlassian — Credentialed in Forge Fundamentals</h3>
+        <h3 class="lang en">Atlassian — Credentialed in Forge Fundamentals</h3>
         <div class="card-actions">
-          <a href="powerbi_certificat.pdf" target="_blank" class="button lang fr">Voir</a>
-          <a href="powerbi_certificat.pdf" target="_blank" class="button lang en">View</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20Forge%20Fundamentals%20certificate.pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20Forge%20Fundamentals%20certificate.pdf" target="_blank" class="button lang en">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="lang fr">Atlassian — Credentialed in JSM Fundamentals with AI</h3>
+        <h3 class="lang en">Atlassian — Credentialed in JSM Fundamentals with AI</h3>
+        <div class="card-actions">
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20JSM%20Fundamentals%20with%20AI%20certificate.pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20JSM%20Fundamentals%20with%20AI%20certificate.pdf" target="_blank" class="button lang en">View</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="lang fr">Atlassian — Credentialed in Rovo Fundamentals</h3>
+        <h3 class="lang en">Atlassian — Credentialed in Rovo Fundamentals</h3>
+        <div class="card-actions">
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20Rovo%20Fundamentals%20certificate.pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Atlassian%20Credentialed%20in%20Rovo%20Fundamentals%20certificate.pdf" target="_blank" class="button lang en">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="lang fr">Advanced Excel (16h)</h3>
+        <h3 class="lang en">Advanced Excel (16h)</h3>
+        <div class="card-actions">
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Advanced%20Excel%20(16h).pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Advanced%20Excel%20(16h).pdf" target="_blank" class="button lang en">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="lang fr">Power BI (14h) Advanced</h3>
+        <h3 class="lang en">Power BI (14h) Advanced</h3>
+        <div class="card-actions">
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Power%20BI%20(14h)%20Advanced.pdf" target="_blank" class="button lang fr">Voir</a>
+          <a href="https://github.com/palycode25/Mes-certificats/blob/main/Power%20BI%20(14h)%20Advanced.pdf" target="_blank" class="button lang en">View</a>
         </div>
       </div>
     </div>
@@ -379,10 +382,67 @@
 </section>
 
 
+<!-- COURSES -->
+<section id="courses">
+  <span class="eyebrow lang fr">Pour aller plus loin</span>
+  <span class="eyebrow lang en">Further reading</span>
+  <h2 class="lang en">Written Courses</h2>
+  <h2 class="lang fr">Cours rédigés</h2>
+  <p class="lang fr courses-intro">Retrouve l'ensemble de mes cours rédigés sur <a href="https://github.com/palycode25/Cours-rediges" target="_blank" rel="noopener" class="inline-link">github.com/palycode25/Cours-rediges</a>.</p>
+  <p class="lang en courses-intro">Find all my written courses on <a href="https://github.com/palycode25/Cours-rediges" target="_blank" rel="noopener" class="inline-link">github.com/palycode25/Cours-rediges</a>.</p>
+
+  <div class="grid">
+
+    <!-- Gestion de projet -->
+<div class="card">
+  <h3 class="lang en">Project Management</h3>
+  <h3 class="lang fr">Gestion de projet</h3>
+  <p class="lang en">Introduction to project management, methodologies, tools, and best practices.</p>
+  <p class="lang fr">Introduction à la gestion de projet, méthodologies, outils et bonnes pratiques.</p>
+
+  <a href="https://github.com/palycode25/Cours-rediges/blob/main/gestion_de_projet.pdf" target="_blank" rel="noopener" class="button lang en">
+    View PDF
+  </a>
+  <a href="https://github.com/palycode25/Cours-rediges/blob/main/gestion_de_projet.pdf" target="_blank" rel="noopener" class="button lang fr">
+    Voir le PDF
+  </a>
+</div>
+
+<!-- R -->
+<div class="card">
+  <h3 class="lang en">Data Analysis with R</h3>
+  <h3 class="lang fr">Analyse de données avec R</h3>
+  <p class="lang en">Data manipulation, visualization, and statistical tests with R.</p>
+  <p class="lang fr">Manipulation de données, visualisation et tests statistiques avec R.</p>
+
+  <a href="https://github.com/palycode25/Cours-rediges/blob/main/R_analyse_de_donn%C3%A9es.pdf" target="_blank" rel="noopener" class="button lang en">
+    View PDF
+  </a>
+  <a href="https://github.com/palycode25/Cours-rediges/blob/main/R_analyse_de_donn%C3%A9es.pdf" target="_blank" rel="noopener" class="button lang fr">
+    Voir le PDF
+  </a>
+</div>
+
+    <!-- Rovo -->
+    <div class="card">
+      <h3 class="lang en">Rovo (Atlassian AI)</h3>
+      <h3 class="lang fr">Rovo (IA Atlassian)</h3>
+      <p class="lang en">Using Atlassian's AI assistant Rovo to support project and knowledge workflows.</p>
+      <p class="lang fr">Utilisation de Rovo, l'assistant IA d'Atlassian, pour appuyer les workflows projet et de connaissance.</p>
+      <a href="https://github.com/palycode25/Cours-rediges/blob/main/Rovo.pdf" target="_blank" class="button lang en">
+        View PDF
+      </a>
+      <a href="https://github.com/palycode25/Cours-rediges/blob/main/Rovo.pdf" target="_blank" class="button lang fr">
+        Voir le PDF
+      </a>
+    </div>
+  </div>
+</section>
+</main>
 
 <footer>
-  <p class="lang en">&copy; 2025 Fatoumata Diallo. All rights reserved.</p>
-  <p class="lang fr">&copy; 2025 Fatoumata Diallo. Tous droits réservés.</p>
+  <p class="lang en">&copy; 2026 Fatoumata Diallo. All rights reserved.</p>
+  <p class="lang fr">&copy; 2026 Fatoumata Diallo. Tous droits réservés.</p>
 </footer>
 
 <script>
